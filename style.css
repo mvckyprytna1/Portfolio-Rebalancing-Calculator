@@ -1,0 +1,59 @@
+/* Custom Scrollbar for better UI */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Sidebar Active State */
+.nav-btn.active {
+  background-color: #1e293b;
+  border-left: 4px solid #34d399; /* emerald-400 */
+}
+.nav-btn {
+  border-left: 4px solid transparent;
+}
+
+/* Status Colors */
+.text-profit { color: #059669; }
+.bg-profit { background-color: #d1fae5; color: #065f46; }
+.text-loss { color: #dc2626; }
+.bg-loss { background-color: #fee2e2; color: #991b1b; }
+.text-hold { color: #64748b; }
+.bg-hold { background-color: #f1f5f9; color: #475569; }
+
+/* Table Hover Effects */
+tbody tr { transition: background-color 0.2s ease; }
+tbody tr:hover { background-color: #f8fafc; cursor: default; }
+
+/* Pie Chart using Conic Gradient */
+#pie-chart {
+  /* Fallback background, overridden by JS */
+  background: conic-gradient(#e2e8f0 0% 100%);
+}
+
+/* Badge Base Style */
+.badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Animation utilities */
+.slide-up {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
